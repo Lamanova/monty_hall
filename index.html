@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Make a Deal | by Victoria</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="letsMakeADeal.js"></script>
+</head>
+
+  <body>
+    <div class="container">
+      <div class="text_container">
+        <div class="title" id="main-title">Wanna make a deal?</div>
+        <div class="title" id="orange-title" style="display: none">You Picked the Orange Door!</div>
+        <div class="title" id="blue-title" style="display: none">You Picked the Blue Door!</div>
+        <div class="title" id="green-title" style="display: none">You Picked the Green Door!</div>
+
+        <p class="desc" id="main-desc">
+          There are three doors. Behind two doors there are BAD THINGS.<br>
+          Behind one door is an AWESOME THING.<br>
+          Choose a door...
+        </p>
+
+        <p class="desc" id="blue-desc" style="display: none">
+          I opened the Orange Door which held a BAD THING.<br>
+          Now if you want to switch you can choose the Green Door<br>
+          or you can keep your first choice and open the Orange Door.
+        </p>
+
+        <p class="desc" id="orange-desc" style="display: none">
+          I opened the Blue Door which held a BAD THING.<br>
+          Now if you want to switch you can choose the Green Door<br>
+          or you can keep your first choice and open the Orange Door.
+        </p>
+
+        <p class="desc" id="green-desc" style="display: none">
+          I opened the Orange Door which held a BAD THING.<br>
+          Now if you want to switch you can choose the Green Door<br>
+          or you can keep your first choice and open the Orange Door.
+        </p>
+      </div>
+
+      <div class="door_container">
+        <div class="door">
+          <img class="door-img" id="blue-door" src="images/blue-door.jpeg">
+          <img class="door-img" id="blue-door-open" src="images/fire.jpg" style="display: none;">
+        </div>
+        <div class="door">
+          <img class="door-img" id="orange-door" src="images/orange-door.jpg">
+          <img class="door-img" id="orange-door-open" src="images/fire.jpg" style="display: none;">
+        </div>
+        <div class="door">
+          <img class="door-img" id="green-door" src="images/green-door.jpeg">
+          <img class="door-img" id="green-door-open" src="images/fire.jpg" style="display: none;">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Make a Deal | by Victoria</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+    <script>
+      $(document).ready(function() {
+        if (window.location.hash === '#success') {
+          $('#success-container').show();
+          $('#failure-container').hide();
+        }
+      });
+    </script>
+    <div class="container" id="success-container" style="display: none;">
+      <div class="text_container">
+        <div class="title" id="success-title">You Win!</div>
+        <p class="desc" id="success-desc">
+          Booyah! Here is your AWESOME THING!
+        </p>
+      </div>
+
+      <div class="video_container" >
+ <iframe width="857" height="482" src="https://www.youtube.com/embed/uqHt2VeYJN4?list=LLYC9UbmHAJRjI9K5IUi5mkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class=text_container>
+        <p class="desc" id="success-footer">
+          You just won and you want <a href="index.html"> play again? </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container" id="failure-container">
+      <div class="text_container">
+        <div class="title" id="failure-title">You Lose!</div>
+        <p class="desc" id="failure-desc">
+          Ouch! Too bad. Here is your BAD THING!
+        </p>
+      </div>
+
+      <div class="video_container" >
+<iframe width="857" height="482" src="https://www.youtube.com/embed/asHyYNDwhy8?list=LLYC9UbmHAJRjI9K5IUi5mkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class=text_container>
+        <p class="desc" id="failure-footer">
+          <a href="index.html"> Wanna try again? </a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
